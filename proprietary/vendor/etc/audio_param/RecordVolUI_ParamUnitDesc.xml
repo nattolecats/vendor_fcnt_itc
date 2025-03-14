@@ -23,7 +23,7 @@
 			<Category name="VoiceUnLk" visible="false" />
 			<Category name="Customization2" visible="true" />
 			<Category name="CUSTOMIZATION3"/>
-			<Category name="FastRecord" visible="false"/>
+			<Category name="FastRecord" visible="true"/>
 			<Category name="Unprocessed"/>
 			<Category name="IncallRecord"/>
 			<Category name="KTV" wording="In Ear Monitor"/>

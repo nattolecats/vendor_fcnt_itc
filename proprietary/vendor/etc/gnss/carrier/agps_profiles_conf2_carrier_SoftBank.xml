@@ -18,6 +18,8 @@
 
   <agps_setting
     ignore_si_for_e911="true"
+    ignore_emergency_ext_secs_from_framework="true"
+    emergency_ext_secs="300"
   />
 
   <gnss_setting

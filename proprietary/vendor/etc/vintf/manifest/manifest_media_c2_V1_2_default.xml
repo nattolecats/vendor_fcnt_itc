@@ -7,6 +7,5 @@
             <name>IComponentStore</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.2::IComponentStore/default</fqname>
     </hal>
 </manifest>

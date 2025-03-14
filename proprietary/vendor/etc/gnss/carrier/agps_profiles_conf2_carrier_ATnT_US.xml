@@ -24,11 +24,6 @@
   />
 
   <cp_setting
-    cp_lppe_enable="true"
-    cp_lppe_wlan_enable="true"
-    cp_lppe_srn_enable="true"
-    cp_lppe_sensor_enable="true"
-    cp_lppe_dbh_enable="true"
   />
 
   <up_setting

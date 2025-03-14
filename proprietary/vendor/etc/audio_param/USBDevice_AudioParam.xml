@@ -12,7 +12,7 @@
   </ParamTree>
   <ParamUnitPool>
     <ParamUnit param_id="0">
-      <Param name="playback_latency_us" value="1500"/>
+      <Param name="playback_latency_us" value="50000"/>
       <Param name="capture_latency_us" value="1500"/>
     </ParamUnit>
     <ParamUnit param_id="1">

@@ -10,6 +10,5 @@
 		<Param name="hifi_audio" type="int" />
 		<Param name="voip_ainr_on" type="int" />		
         <Param name="record_ainr_on" type="int" />
-
 		</ParamUnit>
 </ParamUnitDesc>

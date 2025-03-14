@@ -63,7 +63,7 @@
                type="video/avc"
                driverIntf="v4l2"
                canSwapWidthHeight="true"
-               maxConcurrentInstances="10"
+               maxConcurrentInstances="8"
                minWidthAlignment="32" />
         <Video name="c2.mtk.avc.encoder.secure"
                type="video/avc"
@@ -75,7 +75,7 @@
                type="video/hevc"
                driverIntf="v4l2"
                canSwapWidthHeight="true"
-               maxConcurrentInstances="10"
+               maxConcurrentInstances="8"
                minWidthAlignment="32" />
         <Video name="c2.mtk.heif.encoder"
                type="image/vnd.android.heic"

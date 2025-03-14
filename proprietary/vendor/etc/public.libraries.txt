@@ -1,6 +1,4 @@
 libOpenCL.so
-libportrait_repair_ppl3_ocl.so
-
-libvpu.so
-libiqi_bridge.so
-libOpenCL.so
+libnir_neon_driver_ndk.mtk.vndk.so
+libcmdl_ndk.mtk.vndk.so
+libarmnn_ndk.mtk.vndk.so

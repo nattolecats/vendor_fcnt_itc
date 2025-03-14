@@ -55,6 +55,5 @@
 		<Param name="UL Gain Set" type="int"/>
 		<Param name="UL Gain Name" type="string_array"/>
 		<Param name="ModeParamExt visibility" type="int"/>
-
 	</ParamUnit>
 </ParamUnitDesc>

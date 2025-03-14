@@ -7,7 +7,6 @@ service mobicore /vendor/bin/mcDriverDaemon --sfs-reformat --P1 /mnt/vendor/pers
 	-r /vendor/app/mcRegistry/05160000000000000000000000000000.drbin \
 	-r /vendor/app/mcRegistry/020b0000000000000000000000000000.drbin \
 	-r /vendor/app/mcRegistry/05070000000000000000000000000000.drbin \
-        -r /vendor/app/mcRegistry/05230000000000000000000000000000.drbin \
 	-r /vendor/app/mcRegistry/030b0000000000000000000000000000.drbin \
 	-r /vendor/app/mcRegistry/03100000000000000000000000000000.drbin \
 	-r /vendor/app/mcRegistry/030c0000000000000000000000000000.drbin \
@@ -19,7 +18,6 @@ service mobicore /vendor/bin/mcDriverDaemon --sfs-reformat --P1 /mnt/vendor/pers
 	-r /vendor/app/mcRegistry/036c0000000000000000000000000000.drbin \
 	-r /vendor/app/mcRegistry/037c0000000000000000000000000000.drbin \
 	-r /vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.drbin \
-	-r /vendor/app/mcRegistry/070c0000000000000000000000000000.drbin \
 	-r /vendor/app/mcRegistry/090b0000000000000000000000000000.drbin \
 	-r /vendor/app/mcRegistry/0f5eed3c3b5a47afacca69a84bf0efad.drbin \
 	-r /vendor/app/mcRegistry/07060000000000000000000000007169.drbin \
@@ -32,7 +30,7 @@ service mobicore /vendor/bin/mcDriverDaemon --sfs-reformat --P1 /mnt/vendor/pers
 	-r /vendor/app/mcRegistry/5020170115e016302017012521300000.drbin
     user system
     group system
-    class main
+    class core
     priority -20
 
 # t-Drv naming
@@ -41,7 +39,6 @@ service mobicore /vendor/bin/mcDriverDaemon --sfs-reformat --P1 /mnt/vendor/pers
 # 070b0000000000000000000000000000.drbin : tplay
 # 020b0000000000000000000000000000.drbin : cmdq
 # 05070000000000000000000000000000.drbin : goodix_fp
-# 05230000000000000000000000000000.drbin : chipone_fp
 # 030b0000000000000000000000000000.drbin : spi
 # 030c0000000000000000000000000000.drbin : spi5
 # 07070000000000000000000000000000.drbin : MtkH264Venc
