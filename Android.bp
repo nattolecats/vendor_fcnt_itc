@@ -19260,6 +19260,106 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.camera.provider@2.6-impl-mediatek",
+    owner: "fcnt",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/mt6855/android.hardware.camera.provider@2.6-impl-mediatek.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "hw/mt6855",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.camera.ccap@1.0-impl",
+    owner: "fcnt",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.ccap@1.0-impl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "hw/mt6855",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.camera.isphal@1.0-impl",
+    owner: "fcnt",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.isphal@1.0-impl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "hw/mt6855",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.camera.isphal@1.1-impl",
+    owner: "fcnt",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.isphal@1.1-impl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "hw/mt6855",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.camera.lomoeffect@1.0-impl",
+    owner: "fcnt",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "hw/mt6855",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "sensors.mediatek.V2.0",
     owner: "fcnt",
     strip: {
@@ -28541,6 +28641,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmtkcam_streaminfo_plugin-p1stt",
+    owner: "fcnt",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mtkcam/mt6855/libmtkcam_streaminfo_plugin-p1stt.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "mtkcam/mt6855",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "se_extn_client",
     owner: "fcnt",
     strip: {
@@ -30183,15 +30303,6 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.biometrics.fingerprint@2.1-service.xml",
-    owner: "fcnt",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.neuralnetworks-shim-service-mtk.xml",
     owner: "fcnt",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml",
@@ -30258,6 +30369,15 @@ prebuilt_etc_xml {
     name: "manifest_android.hardware.drm@1.4-service.widevine.xml",
     owner: "fcnt",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_android.hardware.usb@1.2-service-mediatekv2.xml",
+    owner: "fcnt",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.usb@1.2-service-mediatekv2.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -30698,45 +30818,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-sh_binary {
-    name: "hardware_revisions",
-    owner: "fcnt",
-    src: "proprietary/vendor/bin/hardware_revisions.sh",
-    filename: "hardware_revisions.sh",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.biometrics.fingerprint@2.1-service",
-    owner: "fcnt",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "android.hardware.biometrics.fingerprint@2.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "android.hardware.bluetooth@1.1-service-mediatek",
     owner: "fcnt",
@@ -31011,6 +31092,43 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "liblog",
                 "libpower",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.usb@1.2-service-mediatekv2",
+    owner: "fcnt",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2",
+            ],
+            shared_libs: [
+                "android.hardware.usb@1.0",
+                "android.hardware.usb@1.1",
+                "android.hardware.usb@1.2",
+                "android.hardware.usb@1.3",
+                "android.hardware.usb.gadget@1.0",
+                "android.hardware.usb.gadget@1.1",
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
                 "libutils",
                 "libc++",
                 "libc",
@@ -31412,14 +31530,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.insmod",
-    owner: "fcnt",
-    src: "proprietary/vendor/bin/init.insmod.sh",
-    filename: "init.insmod.sh",
     soc_specific: true,
 }
 
@@ -32632,6 +32742,13 @@ install_symlink {
 }
 
 install_symlink {
+    name: "vendor_lib64_hw_android_hardware_camera_provider@2_6-impl-mediatek_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so",
+    symlink_target: "/vendor/lib64/hw/mt6855/android.hardware.camera.provider@2.6-impl-mediatek.so",
+}
+
+install_symlink {
     name: "vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so",
     soc_specific: true,
     installed_location: "lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so",
@@ -32657,6 +32774,34 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so",
     symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_hw_vendor_mediatek_hardware_camera_ccap@1_0-impl_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so",
+    symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.ccap@1.0-impl.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_0-impl_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so",
+    symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.isphal@1.0-impl.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_1-impl_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so",
+    symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.isphal@1.1-impl.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_hw_vendor_mediatek_hardware_camera_lomoeffect@1_0-impl_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so",
+    symlink_target: "/vendor/lib64/hw/mt6855/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so",
 }
 
 install_symlink {
@@ -34176,4 +34321,11 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/sc202a_mipi_raw_tuning.so",
     symlink_target: "/vendor/lib64/mt6855/sc202a_mipi_raw_tuning.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_mtkcam_libmtkcam_streaminfo_plugin-p1stt_so",
+    soc_specific: true,
+    installed_location: "lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so",
+    symlink_target: "/vendor/lib64/mtkcam/mt6855/libmtkcam_streaminfo_plugin-p1stt.so",
 }

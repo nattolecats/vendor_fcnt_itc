@@ -201,7 +201,6 @@ PRODUCT_COPY_FILES += \
     vendor/fcnt/itc/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/fcnt/itc/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/fcnt/itc/proprietary/vendor/etc/init.insmod.mt6855.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6855.cfg \
-    vendor/fcnt/itc/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
@@ -210,6 +209,7 @@ PRODUCT_COPY_FILES += \
     vendor/fcnt/itc/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
+    vendor/fcnt/itc/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
@@ -218,10 +218,16 @@ PRODUCT_COPY_FILES += \
     vendor/fcnt/itc/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
+    vendor/fcnt/itc/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
+    vendor/fcnt/itc/proprietary/vendor/etc/init/init.fcnthal.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fcnthal.nfc.rc \
+    vendor/fcnt/itc/proprietary/vendor/etc/init/init.fcnthal.se.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fcnthal.se.rc \
+    vendor/fcnt/itc/proprietary/vendor/etc/init/init.fmradio_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fmradio_drv.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
+    vendor/fcnt/itc/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
+    vendor/fcnt/itc/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
@@ -244,7 +250,6 @@ PRODUCT_COPY_FILES += \
     vendor/fcnt/itc/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/fcnt/itc/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
-    vendor/fcnt/itc/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/fcnt/itc/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
     vendor/fcnt/itc/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/fcnt/itc/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
@@ -323,7 +328,8 @@ PRODUCT_COPY_FILES += \
     vendor/fcnt/itc/proprietary/vendor/firmware/soc_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_coeff.bin \
     vendor/fcnt/itc/proprietary/vendor/firmware/soc_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc_fm_v1_patch.bin \
     vendor/fcnt/itc/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
-    vendor/fcnt/itc/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
+    vendor/fcnt/itc/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
+    vendor/fcnt/itc/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
@@ -804,6 +810,11 @@ PRODUCT_PACKAGES += \
     kmsetkey.trustonic \
     libMcGatekeeper \
     libSoftGatekeeper \
+    android.hardware.camera.provider@2.6-impl-mediatek \
+    vendor.mediatek.hardware.camera.ccap@1.0-impl \
+    vendor.mediatek.hardware.camera.isphal@1.0-impl \
+    vendor.mediatek.hardware.camera.isphal@1.1-impl \
+    vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     sensors.mediatek.V2.0 \
     vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
@@ -1087,6 +1098,7 @@ PRODUCT_PACKAGES += \
     libpda_usdriver \
     libstereoinfoaccessor_vsdof \
     libvainr_model \
+    libmtkcam_streaminfo_plugin-p1stt \
     se_extn_client \
     libaudiopreprocessing \
     libaudiopreprocessing_mtk \
@@ -1147,7 +1159,6 @@ PRODUCT_PACKAGES += \
     mediatek-framework \
     mediatek-ims-base \
     com.fingerprints.extension \
-    android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
     android.hardware.security.secureclock-service.trustonic.xml \
@@ -1156,6 +1167,7 @@ PRODUCT_PACKAGES += \
     gnss-mtk@2.1-service.xml \
     lbs_hidl_service@1.0.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_android.hardware.usb@1.2-service-mediatekv2.xml \
     manifest_apuware_apusys.xml \
     manifest_apuware_hmp.xml \
     manifest_apuware_utils.xml \
@@ -1176,8 +1188,6 @@ PRODUCT_PACKAGES += \
     fuelgauged \
     fuelgauged_nvram \
     gsm0710muxd \
-    hardware_revisions \
-    android.hardware.biometrics.fingerprint@2.1-service \
     android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
@@ -1186,6 +1196,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.security.keymint-service.trustonic \
     android.hardware.sensors@2.0-service.multihal-mediatek \
+    android.hardware.usb@1.2-service-mediatekv2 \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6855 \
     camerahalserver \
     mtkfusionrild \
@@ -1197,7 +1208,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
-    init.insmod \
     ipsec_mon \
     lbs_hidl_service \
     mcDriverDaemon \
@@ -1302,10 +1312,15 @@ PRODUCT_PACKAGES += \
     vendor_lib64_hw_kmsetkey_default_so \
     vendor_lib64_hw_gatekeeper_trustonic_so \
     vendor_lib64_hw_gatekeeper_default_so \
+    vendor_lib64_hw_android_hardware_camera_provider@2_6-impl-mediatek_so \
     vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
     vendor_lib64_hw_gralloc_rogue_so \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_atms@1_0-impl_so \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_bgservice@1_1-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_ccap@1_0-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_0-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_1-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_camera_lomoeffect@1_0-impl_so \
     vendor_lib64_hw_vendor_mediatek_hardware_pq@2_15-impl_so \
     vendor_lib64_hw_vulkan_mtk_so \
     vendor_lib64_hw_sensors_mt6855_so \
@@ -1522,7 +1537,8 @@ PRODUCT_PACKAGES += \
     vendor_lib64_s5kjns_sunny_main_mipi_raw_IdxMgr_so \
     vendor_lib64_s5kjns_sunny_main_mipi_raw_tuning_so \
     vendor_lib64_sc202a_mipi_raw_IdxMgr_so \
-    vendor_lib64_sc202a_mipi_raw_tuning_so
+    vendor_lib64_sc202a_mipi_raw_tuning_so \
+    vendor_lib64_mtkcam_libmtkcam_streaminfo_plugin-p1stt_so
 
 PRODUCT_BOOT_JARS += \
     mediatek-common \
